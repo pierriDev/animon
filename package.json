@@ -7,11 +7,16 @@
     "ios": "react-native run-ios",
     "start": "react-native start",
     "test": "jest",
-    "lint": "eslint . --ext .js,.jsx,.ts,.tsx"
+    "lint": "eslint . --ext .js,.jsx,.ts,.tsx",
+    "lint-fix": "eslint . --fix"
   },
   "dependencies": {
+    "coverage": "^0.4.1",
+    "i18n": "^0.13.3",
+    "lint": "^0.7.0",
     "react": "17.0.2",
-    "react-native": "0.65.1"
+    "react-native": "0.65.1",
+    "react-native-localize": "^2.1.4"
   },
   "devDependencies": {
     "@babel/core": "^7.12.9",
