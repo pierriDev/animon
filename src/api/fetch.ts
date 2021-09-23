@@ -1,10 +1,12 @@
 import {mainEndpoint} from '../constants';
+import {JWT} from '../constants';
 
 const optionsInterceptor = (options: any) => {
   const opt = {...options};
   opt.headers = {
     ...opt.headers,
     'Content-Type': 'application/json',
+    Authorization: `Bearer ${JWT}`,
     // Add here any header that you need to be included with every request
   };
   return opt;
