@@ -24,6 +24,8 @@ const useAnimeScreen = () => {
         })();
       }, [actualPage]);
 
+    console.log(animesData);
+
     return {
         isLoading,
         perPage,
